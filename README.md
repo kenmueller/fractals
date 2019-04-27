@@ -1,6 +1,6 @@
 # Fractals with JavaScript
 
-**Edit the `<script>` tag in `index.js`**
+**Edit the `<script>` tag in `index.html`**
 
 **Signature for `drawFractal`:**
 
