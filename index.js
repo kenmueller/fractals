@@ -17,7 +17,7 @@ const drawTriangle = point1 => point2 => point3 => color => {
 }
 
 const drawFractal = point1 => point2 => point3 => color => depth => {
-	if (!depth) return drawTriangle(point1)(point2)(point3)(color)
+	if (depth <= 0) return drawTriangle(point1)(point2)(point3)(color)
 	const pointA = { x: point1.x + (point2.x - point1.x) / 2, y: point1.y - (point1.y - point2.y) / 2 }
 	const pointB = { x: point2.x + (point3.x - point2.x) / 2, y: point2.y - (point2.y - point3.y) / 2 }
 	const pointC = { x: point1.x + (point3.x - point1.x) / 2, y: point1.y }
